@@ -423,11 +423,13 @@ async function callAPI(key, system, userText, fileBlocks = [], useSearch = true,
 
       if (resp.status === 429) {
         if (attempt < retries) { await sleep(3000 * (attempt + 1)); continue; }
-        throw new Error('יותר מדי בקשות - נסה שוב בעוד דקה');
+        throw new Error('יותר מדי בקשות (429) - נסה שוב בעוד דקה');
       }
       if (!resp.ok) {
         const e = await resp.json().catch(() => ({}));
-        throw new Error(e.error?.message || `שגיאת שרת ${resp.status}`);
+        const errMsg = e.error?.message || '';
+        const errType = e.error?.type || '';
+        throw new Error(`שגיאת שרת ${resp.status} | ${errType} | ${errMsg}`);
       }
 
       const data = await resp.json();
