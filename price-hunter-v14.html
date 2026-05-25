@@ -397,6 +397,7 @@ function setSearchMode(mode) {
   searchMode = mode;
   document.getElementById('toggleIsrael').className = 'mode-btn' + (mode === 'israel' ? ' sel' : '');
   document.getElementById('toggleWorld').className = 'mode-btn' + (mode === 'world' ? ' sel' : '');
+  if (document.getElementById('queryInput').value.trim()) doSingle();
 }
 
 function mapSerpResults(serpData, query) {
@@ -738,7 +739,8 @@ async function doMoreStores() {
 
   try {
     moreStoresPage += 10;
-    const data = await searchPricesViaSerpAPI(lastQuery, moreStoresPage);
+    const altQuery = moreStoresPage === 10 ? `${lastQuery} מחיר` : moreStoresPage === 20 ? `קנה ${lastQuery}` : lastQuery;
+    const data = await searchPricesViaSerpAPI(altQuery, moreStoresPage);
     const stores = data.stores || [];
     if (!stores.length) throw new Error('לא נמצאו חנויות נוספות.');
     const excludedLower = lastFoundStores.map(n => n.trim().toLowerCase());
