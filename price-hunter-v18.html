@@ -1,0 +1,1079 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>מחפש מחיר - שוק ישראלי</title>
+<link rel="manifest" href="data:application/manifest+json,%7B%22name%22%3A%20%22%D7%9E%D7%97%D7%A4%D7%A9%20%D7%9E%D7%97%D7%99%D7%A8%22%2C%20%22short_name%22%3A%20%22%D7%9E%D7%97%D7%A4%D7%A9%20%D7%9E%D7%97%D7%99%D7%A8%22%2C%20%22description%22%3A%20%22%D7%94%D7%A9%D7%95%D7%95%D7%90%D7%AA%20%D7%9E%D7%97%D7%99%D7%A8%D7%99%D7%9D%20%D7%91%D7%96%D7%9E%D7%9F%20%D7%90%D7%9E%D7%AA%20-%20%D7%A9%D7%95%D7%A7%20%D7%99%D7%A9%D7%A8%D7%90%D7%9C%D7%99%22%2C%20%22start_url%22%3A%20%22./price-hunter-v15.html%22%2C%20%22display%22%3A%20%22standalone%22%2C%20%22background_color%22%3A%20%22%23f4f2ed%22%2C%20%22theme_color%22%3A%20%22%232a6049%22%2C%20%22dir%22%3A%20%22rtl%22%2C%20%22lang%22%3A%20%22he%22%2C%20%22icons%22%3A%20%5B%7B%22src%22%3A%20%22data%3Aimage/png%3Bbase64%2CiVBORw0KGgoAAAANSUhEUgAAAMAAAADACAYAAABS3GwHAAADuklEQVR4nO3dvY0bVxhAUXKhBgQYcAVONnMTAtSFDNegRC3IcAteGO5hAQeOHTraDhwIUA9yYEjQz5LLn5l5HN5zCiBf8N35HifhdjPY7auXH0afgXEe7u63I79/8S838OyzdBCLfJmh5xRLxDDrFxh8pjBnCLN8sMFnDnOEMOkHGnyWMGUIk3yQwWeEKUK4OfcDDD%2BjTDF7ZwVg%2BBnt3Bk8aYUYfC7RKVeiozeA4edSnTKbRwVg%2BLl0x87owQEYftbimFk9KADDz9ocOrNnvwaFNXsyAE9/1uqQ2d0bgOFn7Z6a4Z0BGH6uxb5Z9huAtEcD8PTn2uyaaRuAtG8C8PTnWj022zYAaV8E4OnPtft6xm0A0j4F4OlPxeezbgOQJgDSbjYb1x96Ps68DUCaAEgTAGlb93/KbADSBECaAEgTAGkCIE0ApAmANAGQJgDSBECaAEgTAGkCIE0ApAmANAGQ9mz0AS7RH29%2B2fz4w%2B3oY0zm74d/Nj%2B/fTP6GBfJBiBNAKQJgDQBkCYA0rwFOsKL1z9t/n3/bvQxdvr%2B%2BXebv379ffQxVsUGIE0ApAmANAGQJgDSBECaAEgTAGkCIE0ApAmANAGQJgDSBECaAEgTAGkCIE0ApAmANAGQJgDSBECaAEgTAGkCIE0ApAmANAGQJgDSBECaAEgTAGkCIE0ApAmANAGQJgDSBECaAEgTAGkCIE0ApAmANAGQJgDSBECaAEgTAGkCIE0ApAmANAGQJgDSBECaAEgTAGkCIE0ApAmANAGQJgDSBECaAEgTAGkCIE0ApAmANAGQJgDSBECaAEgTAGkCIE0ApAmANAGQJgDSBECaAEgTAGnPRh9gTf58%2B9voIzAxG4A0AZAmANIEQJoASNvevnr5YfQhYBQbgDQBkCYA0gRAmgBIEwBpAiBNAKQJgDQBkCYA0gRAmgBIEwBpAiBNAKQJgLSbh7v77ehDwAgPd/dbG4A0AZAmANJuNpv/70KjDwJL%2BjjzNgBpAiDtUwCuQVR8Pus2AGlfBGALcO2%2BnnEbgLRvArAFuFaPzbYNQNqjAdgCXJtdM20DkLYzAFuAa7FvlvduABGwdk/N8JNXIBGwVofMrt8ApB0UgC3A2hw6swdvABGwFsfM6lFXIBFw6Y6d0aN/A4iAS3XKbJ41zP5km0twzkP5rLdAtgGjnTuDZ78GFQGjTDF7kw6vKxFLmPKhO8vTWwjMYY7bxqzXFyEwhTmv2Yvc34XAKZb4fbn4D1gxsM/SL1WGv8ERRNvot4j/ASVOw1o8QCfoAAAAAElFTkSuQmCC%22%2C%20%22sizes%22%3A%20%22192x192%22%2C%20%22type%22%3A%20%22image/png%22%7D%2C%20%7B%22src%22%3A%20%22data%3Aimage/png%3Bbase64%2CiVBORw0KGgoAAAANSUhEUgAAAgAAAAIACAYAAAD0eNT6AAAML0lEQVR4nO3cMY4cWQHH4RrLZyAgICBBcsA9fAQyX4EzEHEAiJDWyeaQrO%2BBtCuRcBUTWLO07fZ4erqq3qv6fd8Jqp%2BD/69f9fhhYVdv3r39OPoZAGb0y/sPD6OfocRhb8DIA6xLHKzPgd7J2AOMIQru4/BuZPAB5iQIbuOwnsHoAxyLGPg%2BB3SFwQc4F0HwNQdywfADnJsQ%2BL/8QRh9gKZ6DGQ/vOEHYFm6IZD70IYfgGtqIZD4sEYfgFsUYuDUH9DwA3CPM4fAq9EPsBXjD8C9zrwlpyubM/9jATDO2W4DTvNhDD8AezhLCBz%2BQxh%2BAEY4eggc%2BjcAxh%2BAUY6%2BQYesl6MfOgDncsTbgMPdABh/AGZzxG06VAAc8YABaDjaRh3iyuJohwpA2xFeCUx/A2D8ATiaI2zX1AFwhAMEgGtm37ApryhmPzQAuMWMrwSmuwEw/gCczYzbNlUAzHhAALCG2TZumgCY7WAAYG0zbd0UATDTgQDAlmbZvOEBMMtBAMBeZti%2BoQEwwwEAwAijN3BYAIz%2B4AAw2sgtHBIAxh8APhm1ibsHgPEHgM%2BN2MZdA8D4A8B1e2/kbgFg/AHgaXtu5S4BYPwB4Hn22szNA8D4A8Bt9tjOTQPA%2BAPAy2y9ocP/J0AAYH%2BbBYBv/wBwny23dJMAMP4AsI6tNnX1ADD%2BALCuLbbVbwAAIGjVAPDtHwC2sfbGrhYAxh8AtrXm1q4SAMYfAPax1ub6DQAABN0dAL79A8C%2B1tjeuwLA%2BAPAGPdusFcAABD04gDw7R8Axrpni90AAEDQiwLAt38AmMNLN9kNAAAE3RwAvv0DwFxess03BYDxB4A53brRXgEAQNCzA8C3fwCY2y1b7QYAAIIEAAAEPSsAXP8DwDE8d7PdAABA0HcDwLd/ADiW52y3GwAACHoyAHz7B4Bj%2Bt6GuwEAgCABAABB3wwA1/8AcGxPbbkbAAAIuhoAvv0DwDl8a9PdAABAkAAAgCABAABBXwWA9/8AcC7Xtt0NAAAECQAACPosAFz/A8A5fbnxbgAAIEgAAECQAACAoF8DwPt/ADi3y613AwAAQQIAAIIEAAAECQAACHq1LH4ACAAVj5vvBgAAggQAAAQJAAAIEgAAECQAACBIAABA0IM/AQSAHjcAABAkAAAgSAAAQJAAAIAgAQAAQQIAAIIEAAAECQAACBIAABAkAAAgSAAAQJAAAIAgAQAAQQIAAIIEAAAECQAACBIAABAkAAAgSAAAQJAAAIAgAQAAQQIAAIIEAAAECQAACBIAABAkAAAgSAAAQJAAAIAgAQAAQQIAAIIEAAAECQAACBIAABAkAAAgSAAAQJAAAIAgAQAAQQIAAIIEAAAEvR79ALC1n3/4afQjcCB//9ePy9/%2B%2BePox4DNuQEAgCABAABBAgAAggQAAAQJAAAIEgAAECQAACBIAABAkAAAgCABAABBAgAAggQAAAQJAAAIEgAAECQAACDo9egHgJn9%2B7//Wf70lz%2BPfgxu8Lvf/Hb58Nd/jH4MmJ4bAAAIEgAAECQAACBIAABAkAAAgCABAABBAgAAggQAAAQJAAAIEgAAECQAACBIAABAkAAAgCABAABBAgAAggQAAAQJAAAIEgAAECQAACBIAABAkAAAgCABAABBAgAAggQAAAQJAAAIEgAAECQAACBIAABAkAAAgCABAABBAgAAggQAAAQJAAAIEgAAECQAACBIAABAkAAAgCABAABBAgAAggQAAAQJAAAIEgAAECQAACBIAABAkAAAgCABAABBAgAAggQAAAQJAAAIEgAAECQAACBIAABAkAAAgCABAABBAgAAggQAAAQJAAAIEgAAECQAACBIAABAkAAAgCABAABBAgAAggQAAAQJAAAIEgAAECQAACBIAABAkAAAgCABAABBAgAAggQAAAQJAAAIEgAAECQAACBIAABAkAAAgCABAABBAgAAggQAAAQJAAAIEgAAECQAACBIAABAkAAAgCABAABBAgAAggQAAAQJAAAIEgAAECQAACBIAABAkAAAgCABAABBAgAAggQAAAQJAAAIEgAAECQAACBIAABAkAAAgCABAABBAgAAggQAAAQJAAAIEgAAECQAACBIAABAkAAAgCABAABBAgAAggQAAAQJAAAIEgAAECQAACBIAABAkAAAgCABAABBAgAAggQAAAQJAAAIEgAAECQAACBIAABAkAAAgCABAABBAgAAggQAAAQJAAAIEgAAECQAACBIAABAkAAAgCABAABBAgAAggQAAAQJAAAIEgAAECQAACBIAABAkAAAgCABAABBAgAAggQAAAQJAAAIEgAAECQAACBIAABAkAAAgCABAABBAgAAggQAAAQJAAAIEgAAECQAACBIAABAkAAAgCABAABBAgAAggQAAAQJAAAIEgAAECQAACBIAABAkAAAgCABAABBAgAAggQAAAQJAAAIEgAAECQAACBIAABAkAAAgCABAABBAgAAggQAAAQJAAAIEgAAECQAACBIAABAkAAAgCABAABBAgAAggQAAAQJAAAIEgAAECQAACBIAABAkAAAgCABAABBAgAAggQAAAQJAAAIEgAAECQAACBIAABAkAAAgCABAABBAgAAggQAAAQJAAAIEgAAECQAACBIAABAkAAAgCABAABBAgAAggQAAAQJAAAIEgAAECQAACBIAABAkAAAgCABAABBAgAAgl6PfgCY2R9//4fl5x9%2BGv0YAKtzAwAAQQIAAIIEAAAECQAACBIAABAkAAAgSAAAQJAAAIAgAQAAQQIAAIIEAAAECQAACBIAABAkAAAgSAAAQNDDm3dvP45%2BCABgX24AACBIAABAkAAAgCABAABBAgAAggQAAAQJAAAIEgAAECQAACBIAABAkAAAgCABAABBAgAAggQAAAQJAAAIEgAAECQAACBIAABAkAAAgCABAABBAgAAggQAAAQJAAAIEgAAECQAACBIAABAkAAAgCABAABBAgAAggQAAAQJAAAIEgAAECQAACBIAABAkAAAgCABAABBAgAAggQAAAQJAAAIevXL%2Bw8Pox8CANjPL%2B8/PLgBAIAgAQAAQQIAAIIEAAAECQAACBIAABD0alk%2B/TnA6AcBALb3uPluAAAgSAAAQJAAAIAgAQAAQb8GgB8CAsC5XW69GwAACBIAABAkAAAg6LMA8DsAADinLzfeDQAABAkAAAj6KgC8BgCAc7m27W4AACBIAABAkAAAgKCrAeB3AABwDt/adDcAABD0zQBwCwAAx/bUlrsBAIAgAQAAQU8GgNcAAHBM39twNwAAEPTdAHALAADH8pztdgMAAEHPCgC3AABwDM/dbDcAABAkAAAg6NkB4DUAAMztlq12AwAAQTcFgFsAAJjTrRt98w2ACACAubxkm70CAICgFwWAWwAAmMNLN9kNAAAEvTgA3AIAwFj3bLEbAAAIuisA3AIAwBj3bvDdNwAiAAD2tcb2egUAAEGrBIBbAADYx1qbu9oNgAgAgG2tubWrvgIQAQCwjbU31m8AACBo9QBwCwAA69piWze5ARABALCOrTZ1s1cAIgAA7rPllvoNAAAEbRoAbgEA4GW23tDNbwBEAADcZo/t3OUVgAgAgOfZazN3%2Bw2ACACAp%2B25lbv%2BCFAEAMB1e2/k7n8FIAIA4HMjtnHInwGKAAD4ZNQmDvt/AEQAAHUjt3DofwQkAgCoGr2Bw/8nwNEHAAB7m2H7hgfAssxxEACwh1k2b4oAWJZ5DgQAtjLT1k0TAMsy18EAwJpm27ipAmBZ5jsgALjXjNs23QNdevPu7cfRzwAALzXj8D%2Ba7gbg0swHBwBPmX3Dpg6AZZn/AAHgS0fYrukf8JJXAgDM7AjD/2j6G4BLRzpYAFqOtlGHCoBlOd4BA3B%2BR9ymwz3wJa8EABjpiMP/6HA3AJeOfPAAHNvRN%2BjQD3/JbQAAezj68D86xYe4JAQA2MJZhv/RqT7MJSEAwBrONvyPDv0bgKec9R8MgP2ceUtO%2B8EuuQ0A4BZnHv5Hp/%2BAXxIDAFxTGP1LqQ97SQgAsCy94X%2BU/NCXhABAU3X4H6U//JfEAMC51Uf/koO4QggAnIvh/5oDeQZBAHAsBv/7HNCNxADAnIz%2BbRzWnQQBwBgG/z4ObwOiAGBdxn59DnRn4gDgOiO/r/8Bzwb2kuRX%2B3gAAAAASUVORK5CYII%3D%22%2C%20%22sizes%22%3A%20%22512x512%22%2C%20%22type%22%3A%20%22image/png%22%7D%5D%7D">
+<meta name="theme-color" content="#2a6049">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="מחפש מחיר">
+<link rel="apple-touch-icon" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMAAAADACAYAAABS3GwHAAADuklEQVR4nO3dvY0bVxhAUXKhBgQYcAVONnMTAtSFDNegRC3IcAteGO5hAQeOHTraDhwIUA9yYEjQz5LLn5l5HN5zCiBf8N35HifhdjPY7auXH0afgXEe7u63I79/8S838OyzdBCLfJmh5xRLxDDrFxh8pjBnCLN8sMFnDnOEMOkHGnyWMGUIk3yQwWeEKUK4OfcDDD+jTDF7ZwVg+Bnt3Bk8aYUYfC7RKVeiozeA4edSnTKbRwVg+Ll0x87owQEYftbimFk9KADDz9ocOrNnvwaFNXsyAE9/1uqQ2d0bgOFn7Z6a4Z0BGH6uxb5Z9huAtEcD8PTn2uyaaRuAtG8C8PTnWj022zYAaV8E4OnPtft6xm0A0j4F4OlPxeezbgOQJgDSbjYb1x96Ps68DUCaAEgTAGlb93/KbADSBECaAEgTAGkCIE0ApAmANAGQJgDSBECaAEgTAGkCIE0ApAmANAGQ9mz0AS7RH29+2fz4w+3oY0zm74d/Nj+/fTP6GBfJBiBNAKQJgDQBkCYA0rwFOsKL1z9t/n3/bvQxdvr++Xebv379ffQxVsUGIE0ApAmANAGQJgDSBECaAEgTAGkCIE0ApAmANAGQJgDSBECaAEgTAGkCIE0ApAmANAGQJgDSBECaAEgTAGkCIE0ApAmANAGQJgDSBECaAEgTAGkCIE0ApAmANAGQJgDSBECaAEgTAGkCIE0ApAmANAGQJgDSBECaAEgTAGkCIE0ApAmANAGQJgDSBECaAEgTAGkCIE0ApAmANAGQJgDSBECaAEgTAGkCIE0ApAmANAGQJgDSBECaAEgTAGkCIE0ApAmANAGQJgDSBECaAEgTAGnPRh9gTf58+9voIzAxG4A0AZAmANIEQJoASNvevnr5YfQhYBQbgDQBkCYA0gRAmgBIEwBpAiBNAKQJgDQBkCYA0gRAmgBIEwBpAiBNAKQJgLSbh7v77ehDwAgPd/dbG4A0AZAmANJuNpv/70KjDwJL+jjzNgBpAiDtUwCuQVR8Pus2AGlfBGALcO2+nnEbgLRvArAFuFaPzbYNQNqjAdgCXJtdM20DkLYzAFuAa7FvlvduABGwdk/N8JNXIBGwVofMrt8ApB0UgC3A2hw6swdvABGwFsfM6lFXIBFw6Y6d0aN/A4iAS3XKbJ41zP5km0twzkP5rLdAtgGjnTuDZ78GFQGjTDF7kw6vKxFLmPKhO8vTWwjMYY7bxqzXFyEwhTmv2Yvc34XAKZb4fbn4D1gxsM/SL1WGv8ERRNvot4j/ASVOw1o8QCfoAAAAAElFTkSuQmCC">
+<script>
+  // PWA: register SW via blob (no external file needed)
+  if ('serviceWorker' in navigator) {
+    window.addEventListener('load', () => {
+      const swCode = `self.addEventListener('install', e => self.skipWaiting());
+self.addEventListener('activate', e => e.waitUntil(clients.claim()));
+self.addEventListener('fetch', e => e.respondWith(fetch(e.request)));`;
+      const blob = new Blob([swCode], {type: 'text/javascript'});
+      const swUrl = URL.createObjectURL(blob);
+      navigator.serviceWorker.register(swUrl);
+    });
+  }
+</script>
+<link href="https://fonts.googleapis.com/css2?family=Heebo:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root {
+  --bg:#f4f2ed; --surface:#fff; --surface2:#edeae3; --border:#dbd7ce;
+  --text:#1c1b18; --text2:#6a6760; --text3:#a09d96;
+  --green:#2a6049; --green-l:#e6f2ee; --green-b:#a3cfc0;
+  --red:#b44219; --red-l:#fcede8;
+  --gold:#c48c18; --gold-l:#fef5e4;
+  --blue:#1a5899; --blue-l:#e6eef8;
+  --purple:#6b3fa0; --purple-l:#f3eefb;
+  --r:12px; --r-sm:8px;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:'Heebo',sans-serif;background:var(--bg);color:var(--text);min-height:100vh;direction:rtl}
+.page{max-width:680px;margin:0 auto;padding:1.5rem 1rem 5rem}
+
+/* Header */
+.header{text-align:center;margin-bottom:2rem}
+.logo{width:52px;height:52px;background:var(--green);border-radius:14px;display:inline-flex;align-items:center;justify-content:center;font-size:24px;margin-bottom:.75rem}
+.header h1{font-size:22px;font-weight:700;letter-spacing:-.5px}
+.header p{font-size:13px;color:var(--text2);margin-top:4px}
+
+/* API Key */
+.key-card{background:var(--gold-l);border:1px solid #e6c96a;border-radius:var(--r);padding:1rem 1.25rem;margin-bottom:1.25rem}
+.key-label{font-size:12px;font-weight:600;color:var(--gold);margin-bottom:7px}
+.key-row{display:flex;gap:8px}
+.key-row input{flex:1;height:36px;border:1px solid #dfc96a;border-radius:var(--r-sm);padding:0 10px;font-size:13px;font-family:monospace;background:#fff;color:var(--text);direction:ltr}
+.key-row input:focus{outline:none;border-color:var(--gold)}
+.btn-gold{height:36px;padding:0 14px;background:var(--gold);color:#fff;border:none;border-radius:var(--r-sm);font-size:13px;font-family:'Heebo',sans-serif;cursor:pointer;font-weight:500}
+.btn-gold:hover{background:#a37312}
+.key-status{font-size:11px;color:var(--text3);margin-top:5px}
+.key-status.ok{color:var(--green)}
+
+/* Tabs */
+.tabs{display:flex;gap:3px;background:var(--surface2);border-radius:var(--r);padding:4px;margin-bottom:1.25rem}
+.tab{flex:1;text-align:center;padding:8px 4px;font-size:13px;font-weight:500;cursor:pointer;border-radius:9px;color:var(--text2);border:none;background:none;font-family:'Heebo',sans-serif;transition:all .2s}
+.tab.active{background:var(--surface);color:var(--green);box-shadow:0 1px 4px rgba(0,0,0,.08)}
+
+/* Cards */
+.card{background:var(--surface);border:1px solid var(--border);border-radius:var(--r);padding:1.25rem;margin-bottom:1rem;box-shadow:0 1px 6px rgba(0,0,0,.04)}
+.card-label{font-size:12px;font-weight:600;color:var(--text2);margin-bottom:8px;text-transform:uppercase;letter-spacing:.5px}
+
+/* Inputs */
+.input-row{display:flex;gap:8px;margin-bottom:12px}
+.input-row input,.basket-input{height:44px;border:1px solid var(--border);border-radius:var(--r-sm);padding:0 14px;font-size:15px;font-family:'Heebo',sans-serif;background:var(--bg);color:var(--text);transition:border-color .15s}
+.input-row input{flex:1}
+.basket-input{flex:1;height:40px;font-size:14px}
+.input-row input:focus,.basket-input:focus{outline:none;border-color:var(--green);background:#fff}
+.btn-green{height:44px;padding:0 20px;background:var(--green);color:#fff;border:none;border-radius:var(--r-sm);font-size:15px;font-family:'Heebo',sans-serif;font-weight:500;cursor:pointer;white-space:nowrap;transition:background .15s}
+.btn-green:hover{background:#1e4a38}
+.btn-green:disabled{background:var(--text3);cursor:not-allowed}
+.btn-sm{height:40px;padding:0 14px;border-radius:var(--r-sm);font-size:13px;font-family:'Heebo',sans-serif;cursor:pointer}
+.btn-add{background:var(--green-l);color:var(--green);border:1px solid var(--green-b)}
+.btn-add:hover{background:#d0ece4}
+.btn-clear{background:none;color:var(--text2);border:1px solid var(--border)}
+.btn-clear:hover{background:var(--red-l);border-color:#f0a898;color:var(--red)}
+
+/* Chips */
+.chips-label{font-size:11px;color:var(--text3);margin-bottom:6px}
+.chips{display:flex;flex-wrap:wrap;gap:5px}
+.chip{font-size:12px;padding:4px 11px;border:1px solid var(--border);border-radius:20px;cursor:pointer;color:var(--text2);background:var(--surface2);font-family:'Heebo',sans-serif;transition:all .15s}
+.chip:hover{background:var(--green-l);border-color:var(--green-b);color:var(--green)}
+
+/* Basket list */
+.basket-list{margin-bottom:10px;min-height:40px}
+.basket-item{display:flex;align-items:center;gap:8px;padding:7px 10px;background:var(--surface2);border-radius:var(--r-sm);margin-bottom:4px;font-size:14px}
+.basket-item-name{flex:1}
+.btn-x{background:none;border:none;cursor:pointer;color:var(--text3);font-size:18px;line-height:1;padding:0 2px}
+.btn-x:hover{color:var(--red)}
+.basket-empty{font-size:13px;color:var(--text3);text-align:center;padding:14px 0}
+.basket-actions{display:flex;gap:8px;margin-top:4px}
+.basket-actions .btn-green{flex:1}
+
+/* Upload */
+.upload-zone{border:2px dashed var(--border);border-radius:var(--r);padding:2rem 1rem;text-align:center;cursor:pointer;transition:all .2s;background:var(--bg);margin-bottom:1rem}
+.upload-zone:hover,.upload-zone.drag{border-color:var(--green);background:var(--green-l)}
+.upload-icon{font-size:32px;margin-bottom:8px}
+.upload-title{font-size:15px;font-weight:500;margin-bottom:5px}
+.upload-sub{font-size:12px;color:var(--text2);margin-bottom:12px}
+.type-badges{display:flex;gap:6px;justify-content:center;flex-wrap:wrap}
+.type-badge{font-size:11px;padding:3px 10px;border:1px solid var(--border);border-radius:20px;color:var(--text2)}
+input[type="file"]{display:none}
+.preview-box{background:var(--surface2);border:1px solid var(--border);border-radius:var(--r-sm);padding:.9rem 1.1rem;margin-bottom:1rem;display:none}
+.preview-header{display:flex;justify-content:space-between;align-items:center;margin-bottom:8px}
+.preview-filename{font-size:13px;font-weight:500}
+.preview-img{max-width:100%;max-height:180px;border-radius:7px;display:block;margin:0 auto 8px}
+.mode-btns{display:flex;gap:8px;margin-bottom:10px}
+.mode-btn{flex:1;padding:9px;border:1px solid var(--border);border-radius:var(--r-sm);background:var(--surface2);cursor:pointer;font-size:13px;font-family:'Heebo',sans-serif;color:var(--text2);transition:all .15s}
+.mode-btn.sel{border-color:var(--green);background:var(--green-l);color:var(--green);font-weight:500}
+
+/* Progress box - live status */
+.progress-box{background:var(--surface);border:1px solid var(--border);border-radius:var(--r);padding:1rem 1.25rem;margin-bottom:1rem;display:none}
+.progress-title{font-size:13px;font-weight:500;color:var(--text2);margin-bottom:10px;display:flex;align-items:center;gap:8px}
+.spinner{width:16px;height:16px;border:2px solid var(--border);border-top-color:var(--green);border-radius:50%;animation:spin .7s linear infinite;flex-shrink:0}
+@keyframes spin{to{transform:rotate(360deg)}}
+.prog-list{display:flex;flex-direction:column;gap:4px}
+.prog-item{display:flex;align-items:center;gap:8px;font-size:13px;padding:5px 8px;border-radius:6px;transition:all .3s}
+.prog-item.waiting{color:var(--text3)}
+.prog-item.searching{background:var(--blue-l);color:var(--blue)}
+.prog-item.done{background:var(--green-l);color:var(--green)}
+.prog-item.error{background:var(--red-l);color:var(--red)}
+.prog-icon{width:18px;text-align:center;flex-shrink:0;font-size:13px}
+.prog-name{flex:1}
+.prog-price{font-size:12px;font-weight:600}
+
+/* Error */
+.err-box{background:var(--red-l);border:1px solid #f0a898;border-radius:var(--r-sm);padding:.9rem 1.1rem;margin-bottom:1rem;font-size:14px;color:var(--red);display:none}
+
+/* Results */
+.results-wrap{display:none}
+.product-block{background:var(--surface);border:1px solid var(--border);border-radius:var(--r);overflow:hidden;margin-bottom:.75rem;box-shadow:0 1px 5px rgba(0,0,0,.04)}
+.product-header{padding:.8rem 1.1rem;background:var(--surface2);border-bottom:1px solid var(--border);display:flex;justify-content:space-between;align-items:baseline;gap:8px}
+.product-name{font-size:14px;font-weight:600;flex:1}
+.product-best{font-size:13px;font-weight:700;color:var(--green);flex-shrink:0}
+.store-row{display:flex;align-items:center;gap:10px;padding:11px 1.1rem;border-bottom:1px solid var(--border);transition:background .12s}
+.store-row:last-child{border-bottom:none}
+.store-row:hover{background:var(--bg)}
+.store-row.best{background:var(--green-l)}
+.rank{width:24px;height:24px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:11px;font-weight:500;flex-shrink:0;background:var(--surface2);color:var(--text3);border:1px solid var(--border)}
+.rank.gold{background:var(--gold-l);color:var(--gold);border-color:#e0c060;font-size:13px}
+.store-info{flex:1;min-width:0}
+.store-name{font-size:14px;font-weight:500;display:flex;align-items:center;gap:5px;flex-wrap:wrap}
+.badge{font-size:10px;padding:1px 7px;border-radius:10px;font-weight:400}
+.badge-best{background:var(--green);color:#fff}
+.badge-free{background:var(--green-l);color:var(--green);border:1px solid var(--green-b)}
+.badge-paid{background:var(--red-l);color:var(--red);border:1px solid #f0a898}
+.store-note{font-size:11px;color:var(--text3);margin-top:2px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.price-col{text-align:left;flex-shrink:0}
+.unit-p{font-size:18px;font-weight:700;letter-spacing:-.5px}
+.store-row.best .unit-p{color:var(--green)}
+.unit-lbl{font-size:11px;color:var(--text2);font-weight:400}
+.pack-p{font-size:11px;color:var(--text3);text-align:left}
+.p-diff{font-size:11px;color:var(--red);text-align:left;margin-top:1px}
+.store-link{flex-shrink:0;width:28px;height:28px;border-radius:7px;background:var(--surface2);border:1px solid var(--border);display:flex;align-items:center;justify-content:center;text-decoration:none;color:var(--text2);font-size:12px;transition:all .15s}
+.store-link:hover{background:var(--green-l);border-color:var(--green-b);color:var(--green)}
+
+/* Recommendation */
+.rec-box{background:var(--blue-l);border:1px solid #a8c4e8;border-radius:var(--r);padding:1.1rem 1.25rem;margin-bottom:1rem;display:none}
+.rec-label{font-size:12px;font-weight:600;color:var(--blue);margin-bottom:6px;text-transform:uppercase;letter-spacing:.5px}
+.rec-store{font-size:20px;font-weight:700;color:var(--blue);margin-bottom:4px}
+.rec-total{font-size:14px;color:var(--text2)}
+.rec-savings{font-size:13px;color:var(--green);font-weight:500;margin-top:3px}
+.rec-text{font-size:13px;color:var(--text2);margin-top:8px;line-height:1.6;border-top:1px solid #a8c4e8;padding-top:8px}
+
+/* Identified */
+.id-box{background:var(--purple-l);border:1px solid #c9a8e8;border-radius:var(--r);padding:1rem 1.25rem;margin-bottom:1rem;display:none}
+.id-title{font-size:13px;font-weight:500;color:var(--purple);margin-bottom:10px}
+.id-item{display:flex;align-items:center;gap:7px;padding:6px 9px;background:#fff;border-radius:var(--r-sm);margin-bottom:4px;font-size:14px;border:1px solid #ddd0f0}
+.id-check{color:var(--green)}
+.btn-purple{width:100%;margin-top:10px;height:40px;background:var(--purple);color:#fff;border:none;border-radius:var(--r-sm);font-size:14px;font-family:'Heebo',sans-serif;font-weight:500;cursor:pointer}
+.btn-purple:hover{background:#562e85}
+.btn-purple:disabled{background:var(--text3);cursor:not-allowed}
+
+.disclaimer{font-size:11px;color:var(--text3);line-height:1.6;margin-top:.5rem}
+@media(max-width:480px){
+  .page{padding:1rem .9rem 3rem}
+  .header h1{font-size:20px}
+  .tab{font-size:12px}
+  .unit-p{font-size:16px}
+  .store-link{display:none}
+  .mode-btns{flex-direction:column}
+}
+</style>
+</head>
+<body>
+<div class="page">
+
+<div class="header">
+  <div class="logo">🔍</div>
+  <h1>מחפש מחיר - שוק ישראלי</h1>
+  <p>השוואת מחירים בזמן אמת - כל מוצר, כל חנות, כל אתר</p>
+</div>
+
+<!-- API Key -->
+<div class="key-card">
+  <div class="key-label">🔑 מפתח API (Anthropic)</div>
+  <div class="key-row">
+    <input type="password" id="apiKeyInput" placeholder="sk-ant-..." autocomplete="off"/>
+    <button class="btn-gold" onclick="saveKey()">שמור</button>
+  </div>
+  <div class="key-status" id="keyStatus">לא הוזן מפתח</div>
+</div>
+
+<!-- Tabs -->
+<div class="tabs">
+  <button class="tab active" id="tab-single" onclick="switchTab('single')">🔎 מוצר בודד</button>
+  <button class="tab" id="tab-basket" onclick="switchTab('basket')">🛒 סל מוצרים</button>
+  <button class="tab" id="tab-upload" onclick="switchTab('upload')">📄 חשבונית / תמונה</button>
+</div>
+
+<!-- SINGLE -->
+<div id="mode-single">
+  <div class="card">
+    <div class="card-label">חיפוש מוצר</div>
+    <div class="mode-btns" style="margin-bottom:12px">
+      <button class="mode-btn sel" id="toggleIsrael" onclick="setSearchMode('israel')">🇮🇱 ישראל בלבד</button>
+      <button class="mode-btn" id="toggleWorld" onclick="setSearchMode('world')">🌍 כל העולם</button>
+    </div>
+    <div class="input-row">
+      <input type="text" id="queryInput" placeholder="לדוגמה: קו-אנזים Q10 60 מ&quot;ג 180 כמוסות"/>
+      <button class="btn-green" id="singleBtn" onclick="doSingle()">חפש</button>
+    </div>
+    <div class="chips-label">חיפושים מהירים:</div>
+    <div class="chips">
+      <span class="chip" onclick="setQ('אייפון 15 פרו מקס 256GB')">אייפון 15 Pro Max</span>
+      <span class="chip" onclick="setQ('סמסונג גלקסי S24 Ultra')">Samsung S24 Ultra</span>
+      <span class="chip" onclick="setQ('אוזניות Sony WH-1000XM5')">Sony WH-1000XM5</span>
+      <span class="chip" onclick="setQ('מקרר בוש 500 ליטר')">מקרר בוש</span>
+      <span class="chip" onclick="setQ('קו-אנזים Q10 180 כמוסות')">קו-אנזים Q10</span>
+      <span class="chip" onclick="setQ('נייק אייר מקס 270')">Nike Air Max</span>
+      <span class="chip" onclick="setQ('רובה אספרסו דלונגי')">מכונת קפה</span>
+    </div>
+  </div>
+  <div class="progress-box" id="progSingle">
+    <div class="progress-title"><div class="spinner"></div><span id="progSingleText">מחפש...</span></div>
+  </div>
+  <div class="err-box" id="errSingle"></div>
+  <div class="results-wrap" id="resSingle"></div>
+  <div id="moreSingleWrap" style="display:none;text-align:center;margin-top:12px">
+    <button id="moreStoresBtn" class="btn-green" onclick="doMoreStores()">🔄 חנויות נוספות</button>
+  </div>
+  <div style="text-align:center;margin-top:8px">
+    <button onclick="toggleDebug()" style="font-size:11px;color:var(--text3);background:none;border:1px solid var(--border);border-radius:6px;padding:3px 10px;cursor:pointer">🛠 Debug</button>
+  </div>
+  <div id="debugPanel" style="display:none;margin-top:8px;background:#1c1b18;border-radius:8px;padding:12px;overflow:auto;max-height:300px">
+    <div style="color:#a3cfc0;font-size:11px;margin-bottom:6px;font-family:monospace">Raw SerpAPI Response:</div>
+    <pre id="debugContent" style="color:#e6f2ee;font-size:11px;font-family:monospace;white-space:pre-wrap;word-break:break-all"></pre>
+  </div>
+</div>
+
+<!-- BASKET -->
+<div id="mode-basket" style="display:none">
+  <div class="card">
+    <div class="card-label">סל מוצרים</div>
+    <div style="display:flex;gap:8px;margin-bottom:10px">
+      <input type="text" id="basketInput" class="basket-input" placeholder="הוסף מוצר..."/>
+      <button class="btn-sm btn-add" onclick="addItem()">+ הוסף</button>
+    </div>
+    <div class="basket-list" id="basketList"><div class="basket-empty">הסל ריק - הוסף מוצרים</div></div>
+    <div class="basket-actions">
+      <button class="btn-green" id="basketBtn" onclick="doBasket()">חפש מחירים לכל הסל</button>
+      <button class="btn-sm btn-clear" onclick="clearBasket()">נקה סל</button>
+    </div>
+    <div class="chips-label" style="margin-top:10px">טעינה מהירה:</div>
+    <div class="chips"><span class="chip" onclick="loadMyList()">📋 רשימת התוספים שלי</span></div>
+  </div>
+  <div class="progress-box" id="progBasket">
+    <div class="progress-title"><div class="spinner"></div><span>מחפש מחירים...</span></div>
+    <div class="prog-list" id="progBasketList"></div>
+  </div>
+  <div class="err-box" id="errBasket"></div>
+  <div class="rec-box" id="recBox">
+    <div class="rec-label">המלצה - חנות אחת לכל הסל</div>
+    <div class="rec-store" id="recStore"></div>
+    <div class="rec-total" id="recTotal"></div>
+    <div class="rec-savings" id="recSavings"></div>
+    <div class="rec-text" id="recText"></div>
+  </div>
+  <div class="results-wrap" id="resBasket"></div>
+</div>
+
+<!-- UPLOAD -->
+<div id="mode-upload" style="display:none">
+  <div class="card">
+    <div class="card-label">העלה חשבונית PDF או תמונת מוצר</div>
+    <div class="upload-zone" id="uploadZone"
+      onclick="document.getElementById('fileInput').click()"
+      ondragover="onDrag(event,true)" ondragleave="onDrag(event,false)" ondrop="onDrop(event)">
+      <div class="upload-icon">📂</div>
+      <div class="upload-title">לחץ להעלאה או גרור לכאן</div>
+      <div class="upload-sub">PDF חשבונית - זיהוי אוטומטי של מוצרים<br>תמונת מוצר - זיהוי ומציאת מחיר</div>
+      <div class="type-badges">
+        <span class="type-badge">PDF</span><span class="type-badge">JPG</span>
+        <span class="type-badge">PNG</span><span class="type-badge">WEBP</span>
+      </div>
+    </div>
+    <input type="file" id="fileInput" accept=".pdf,.jpg,.jpeg,.png,.webp" onchange="onFileSelected(event)"/>
+    <div class="preview-box" id="previewBox">
+      <div class="preview-header">
+        <span class="preview-filename" id="previewName"></span>
+        <button class="btn-x" onclick="clearFile()">×</button>
+      </div>
+      <img id="previewImg" class="preview-img" style="display:none"/>
+      <div class="mode-btns">
+        <button class="mode-btn sel" id="modeInvoice" onclick="setMode('invoice')">🧾 חשבונית - זהה מוצרים</button>
+        <button class="mode-btn" id="modeProduct" onclick="setMode('product')">📦 תמונת מוצר</button>
+      </div>
+      <button class="btn-green" id="analyzeBtn" onclick="doAnalyze()" style="width:100%">זהה וחפש</button>
+    </div>
+  </div>
+  <div class="progress-box" id="progUpload">
+    <div class="progress-title"><div class="spinner"></div><span id="progUploadText">מנתח...</span></div>
+    <div class="prog-list" id="progUploadList"></div>
+  </div>
+  <div class="err-box" id="errUpload"></div>
+  <div class="id-box" id="idBox">
+    <div class="id-title" id="idTitle">מוצרים שזוהו:</div>
+    <div id="idList"></div>
+    <button class="btn-purple" id="idSearchBtn" onclick="doSearchIdentified()">חפש מחירים לכל המוצרים</button>
+  </div>
+  <div class="rec-box" id="recBoxUpload">
+    <div class="rec-label">המלצה - חנות אחת לכל הסל</div>
+    <div class="rec-store" id="recStoreUpload"></div>
+    <div class="rec-total" id="recTotalUpload"></div>
+    <div class="rec-savings" id="recSavingsUpload"></div>
+    <div class="rec-text" id="recTextUpload"></div>
+  </div>
+  <div class="results-wrap" id="resUpload"></div>
+  <div style="text-align:center;margin-top:8px">
+    <button onclick="toggleDebugUpload()" style="font-size:11px;color:var(--text3);background:none;border:1px solid var(--border);border-radius:6px;padding:3px 10px;cursor:pointer">🛠 Debug</button>
+  </div>
+  <div id="debugPanelUpload" style="display:none;margin-top:8px;background:#1c1b18;border-radius:8px;padding:12px;overflow:auto;max-height:300px">
+    <div style="color:#a3cfc0;font-size:11px;margin-bottom:6px;font-family:monospace">Raw API Response:</div>
+    <pre id="debugContentUpload" style="color:#e6f2ee;font-size:11px;font-family:monospace;white-space:pre-wrap;word-break:break-all"></pre>
+  </div>
+</div>
+
+<p class="disclaimer">* הסוכן מחפש בזמן אמת בכל האינטרנט הישראלי. המחירים משתנים - תמיד בדוק לפני רכישה. עלות: ~$0.003 לחיפוש.</p>
+</div>
+
+<script>
+'use strict';
+
+// ════════════════════════════════════════
+// SYSTEM PROMPTS
+// ════════════════════════════════════════
+const SYS_PRICE = `אתה סוכן השוואת מחירים לשוק הישראלי. המשימה: מחיר אמיתי ומדויק בלבד.
+
+כללים מחמירים - חובה לקיים:
+1. אסור להמציא מחיר. אסור להעריך מחיר. אסור להשתמש במחיר ישן או משוער.
+2. רק מחיר שמצאת בפועל על עמוד מוצר פעיל - היום.
+3. אם לא מצאת מחיר מאומת לחנות מסוימת - אל תכלול אותה בתשובה.
+4. כל URL חייב להיות קישור ישיר לעמוד המוצר - לא לדף ראשי.
+
+שיטת חיפוש - בצע בסדר הזה:
+1. חפש את המוצר בעברית ובאנגלית
+2. חפש ספציפית באתרים הישראלים: bug.co.il, ivory.co.il, ksp.co.il, netone.co.il, zap.co.il, netvision.net.il, mega.co.il, superpharm.co.il, newpharma.co.il
+3. לכל חנות - ודא שאתה רואה מחיר ברור על עמוד המוצר הנוכחי
+4. אל תסתמך על snippet בלבד - ודא מול עמוד המוצר
+
+השב אך ורק ב-JSON תקין ללא markdown:
+{
+  "product_he": "שם מוצר בעברית",
+  "unit_type": "יחידה",
+  "stores": [
+    {
+      "store": "שם חנות",
+      "shipping": "מדיניות משלוח",
+      "packs": [
+        {"pack_desc":"תיאור דגם/אריזה","price":199.90,"units":1,"unit_price":199.90,"url":"https://..."}
+      ]
+    }
+  ]
+}
+מיין stores לפי unit_price הנמוך ביותר. החזר עד 3 חנויות עם מחיר מאומת בלבד.
+החזר JSON בלבד - ללא מילה אחת לפני או אחרי. ללא markdown. ללא הסברים.`;
+
+const SYS_INVOICE = `אתה מנתח חשבוניות קניה.
+השב אך ורק ב-JSON תקין ללא markdown:
+{"products":["שם מוצר 1","שם מוצר 2"],"store_name":"שם חנות","purchase_date":"תאריך"}
+כלול רק שמות מוצרים ברורים. אם לא חשבונית: {"error":"לא נמצאה חשבונית"}.`;
+
+const SYS_PRODUCT_IMG = `אתה מזהה מוצרים מתמונות.
+השב אך ורק ב-JSON תקין ללא markdown:
+{"product_he":"שם בעברית","search_query":"מחרוזת חיפוש מיטבית לישראל"}
+אם לא ניתן לזהות: {"error":"לא ניתן לזהות"}.`;
+
+// ════════════════════════════════════════
+// STATE
+// ════════════════════════════════════════
+let basket = [];
+let lastQuery = '';
+let lastFoundStores = [];
+let uploadFile = null;
+let uploadMode = 'invoice';
+let identifiedProducts = [];
+let searchMode = 'israel';
+let moreStoresPage = 0;
+
+// ════════════════════════════════════════
+// SERPAPI VIA CLOUDFLARE WORKER
+// ════════════════════════════════════════
+const WORKER_URL = 'https://price-hunter-proxy.rikmotnativ.workers.dev';
+
+let lastRawSerpData = null;
+let lastRawUploadData = null;
+
+function toggleDebugUpload() {
+  const panel = document.getElementById('debugPanelUpload');
+  const content = document.getElementById('debugContentUpload');
+  if (panel.style.display === 'none') {
+    content.textContent = lastRawUploadData
+      ? JSON.stringify(lastRawUploadData, null, 2)
+      : 'עדיין לא בוצע ניתוח תמונה/חשבונית.';
+    panel.style.display = 'block';
+  } else {
+    panel.style.display = 'none';
+  }
+}
+
+function toggleDebug() {
+  const panel = document.getElementById('debugPanel');
+  const content = document.getElementById('debugContent');
+  if (panel.style.display === 'none') {
+    content.textContent = lastRawSerpData
+      ? JSON.stringify(lastRawSerpData, null, 2)
+      : 'עדיין לא בוצע חיפוש.';
+    panel.style.display = 'block';
+  } else {
+    panel.style.display = 'none';
+  }
+}
+
+function setSearchMode(mode) {
+  searchMode = mode;
+  document.getElementById('toggleIsrael').className = 'mode-btn' + (mode === 'israel' ? ' sel' : '');
+  document.getElementById('toggleWorld').className = 'mode-btn' + (mode === 'world' ? ' sel' : '');
+  if (document.getElementById('queryInput').value.trim()) setTimeout(() => doSingle(), 0);
+}
+
+function isIsraeliStore(item) {
+  const url = item.product_link || item.link || '';
+  try { if (new URL(url).hostname.endsWith('.il')) return true; } catch(e) {}
+  if (/[\u0590-\u05FF]/.test(item.source || '')) return true;
+  if ((item.source || '').toLowerCase().includes('.il')) return true;
+  return false;
+}
+
+function mapSerpResults(serpData, query) {
+  let items = serpData.shopping_results || [];
+  if (!items.length) throw new Error('לא נמצאו תוצאות. נסה שם מדויק יותר.');
+  if (searchMode === 'israel') {
+    const ilItems = items.filter(isIsraeliStore);
+    if (ilItems.length > 0) items = ilItems;
+  }
+  const storeMap = {};
+  for (const item of items) {
+    const storeName = item.source || 'חנות לא ידועה';
+    if (!storeMap[storeName]) {
+      storeMap[storeName] = {
+        store: storeName,
+        shipping: item.shipping || 'לא צוין',
+        packs: []
+      };
+    }
+    if (item.extracted_price != null) {
+      storeMap[storeName].packs.push({
+        pack_desc: item.title || query,
+        price: item.extracted_price,
+        units: 1,
+        unit_price: item.extracted_price,
+        url: item.product_link || item.link || ''
+      });
+    }
+  }
+  const stores = Object.values(storeMap)
+    .filter(s => s.packs.length > 0)
+    .map(s => { s.packs.sort((a, b) => a.unit_price - b.unit_price); s.packs = s.packs.slice(0, 2); return s; });
+  stores.sort((a, b) => (a.packs[0]?.unit_price || 999999) - (b.packs[0]?.unit_price || 999999));
+  return { product_he: query, stores: stores.slice(0, 3) };
+}
+
+async function searchPricesViaSerpAPI(query, startIndex = 0) {
+  const start = startIndex > 0 ? `&start=${startIndex}` : '';
+  const gl = searchMode === 'israel' ? 'il' : 'us';
+  const url = `${WORKER_URL}?q=${encodeURIComponent(query)}&gl=${gl}&hl=he${start}`;
+  const res = await fetch(url);
+  if (!res.ok) throw new Error(`שגיאת Worker: ${res.status}`);
+  const serpData = await res.json();
+  if (serpData.error) throw new Error(`שגיאת SerpAPI: ${serpData.error}`);
+  lastRawSerpData = serpData;
+  return mapSerpResults(serpData, query);
+}
+
+// ════════════════════════════════════════
+// KEY MANAGEMENT
+// ════════════════════════════════════════
+function saveKey() {
+  const k = document.getElementById('apiKeyInput').value.trim();
+  if (!k.startsWith('sk-ant-')) { setKeyStatus('מפתח לא תקין', false); return; }
+  try { localStorage.setItem('ph_key', k); } catch(e) {}
+  sessionStorage.setItem('ph_key_session', k);
+  setKeyStatus('מפתח נשמר ✓', true);
+  document.getElementById('apiKeyInput').value = '';
+  document.getElementById('apiKeyInput').placeholder = '***שמור***';
+}
+function getKey() { 
+  return localStorage.getItem('ph_key') || sessionStorage.getItem('ph_key_session') || ''; 
+}
+function setKeyStatus(msg, ok) {
+  const el = document.getElementById('keyStatus');
+  el.textContent = msg;
+  el.className = 'key-status' + (ok ? ' ok' : '');
+}
+window.addEventListener('DOMContentLoaded', () => {
+  if (getKey()) setKeyStatus('מפתח שמור ✓', true);
+  document.getElementById('queryInput').addEventListener('keydown', e => { if (e.key === 'Enter') doSingle(); });
+  document.getElementById('basketInput').addEventListener('keydown', e => { if (e.key === 'Enter') addItem(); });
+});
+
+// ════════════════════════════════════════
+// TABS
+// ════════════════════════════════════════
+function switchTab(t) {
+  ['single','basket','upload'].forEach(id => {
+    document.getElementById('mode-' + id).style.display = id === t ? 'block' : 'none';
+    document.getElementById('tab-' + id).className = 'tab' + (id === t ? ' active' : '');
+  });
+}
+
+// ════════════════════════════════════════
+// API CALL - single responsibility
+// ════════════════════════════════════════
+async function callAPI(key, system, userText, fileBlocks = [], useSearch = true, retries = 2) {
+  const content = [...fileBlocks, { type: 'text', text: userText }];
+  const body = { model: 'claude-haiku-4-5-20251001', max_tokens: 4000, system, messages: [{ role: 'user', content }] };
+  if (useSearch) body.tools = [{ type: 'web_search_20250305', name: 'web_search' }];
+
+  for (let attempt = 0; attempt <= retries; attempt++) {
+    try {
+      const resp = await fetch('https://api.anthropic.com/v1/messages', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+          'x-api-key': key,
+          'anthropic-version': '2023-06-01',
+          'anthropic-dangerous-direct-browser-access': 'true'
+        },
+        body: JSON.stringify(body)
+      });
+
+      if (resp.status === 429) {
+        if (attempt < retries) { await sleep(3000 * (attempt + 1)); continue; }
+        throw new Error('יותר מדי בקשות (429) - נסה שוב בעוד דקה');
+      }
+      if (!resp.ok) {
+        const e = await resp.json().catch(() => ({}));
+        const errMsg = e.error?.message || '';
+        const errType = e.error?.type || '';
+        throw new Error(`שגיאת שרת ${resp.status} | ${errType} | ${errMsg}`);
+      }
+
+      const data = await resp.json();
+      try {
+        return parseJSON(data);
+      } catch(jsonErr) {
+        // JSON parse failed - retry with stricter instruction
+        if (attempt < retries) {
+          await sleep(2000);
+          body.messages[0].content[body.messages[0].content.length - 1].text += '\n\nחשוב ביותר: החזר JSON בלבד. ללא טקסט לפני או אחרי. ללא הסברים.';
+          continue;
+        }
+        throw jsonErr;
+      }
+    } catch(e) {
+      if (attempt < retries && e.message?.includes('429')) { await sleep(3000); continue; }
+      throw e;
+    }
+  }
+}
+
+function sleep(ms) { return new Promise(r => setTimeout(r, ms)); }
+
+// ════════════════════════════════════════
+// JSON PARSER - robust
+// ════════════════════════════════════════
+function parseJSON(data) {
+  let text = '';
+  for (const block of (data.content || [])) {
+    if (block.type === 'text') text += block.text;
+  }
+  text = text.replace(/```json|```/g, '').trim();
+  text = text.replace(/[\x00-\x08\x0B\x0C\x0E-\x1F\x7F]/g, '');
+
+  // Find all JSON objects, return the best one
+  let best = null;
+  let pos = 0;
+  while (pos < text.length) {
+    const start = text.indexOf('{', pos);
+    if (start === -1) break;
+    let depth = 0, end = -1;
+    for (let i = start; i < text.length; i++) {
+      if (text[i] === '{') depth++;
+      else if (text[i] === '}') { depth--; if (depth === 0) { end = i; break; } }
+    }
+    const candidate = end > -1 ? text.slice(start, end + 1) : text.slice(start);
+    const parsed = tryParse(candidate);
+    if (parsed && (!best || JSON.stringify(parsed).length > JSON.stringify(best).length)) best = parsed;
+    pos = end > -1 ? end + 1 : text.length;
+  }
+  if (best) return best;
+  throw new Error('לא ניתן לפענח תשובה מה-API');
+}
+
+function tryParse(str) {
+  try { return JSON.parse(str); } catch(e) {
+    // Progressive truncation
+    const lines = str.split('\n');
+    for (let cut = lines.length - 1; cut > Math.floor(lines.length * 0.5); cut--) {
+      let s = lines.slice(0, cut).join('\n').replace(/,\s*$/, '');
+      const o = (s.match(/\{/g)||[]).length - (s.match(/\}/g)||[]).length;
+      const a = (s.match(/\[/g)||[]).length - (s.match(/\]/g)||[]).length;
+      for (let i = 0; i < a; i++) s += ']';
+      for (let i = 0; i < o; i++) s += '}';
+      try { return JSON.parse(s); } catch(e2) {}
+    }
+    return null;
+  }
+}
+
+// ════════════════════════════════════════
+// NORMALIZE STORE - handles any API format
+// ════════════════════════════════════════
+function toNum(v) {
+  if (typeof v === 'number' && !isNaN(v)) return v;
+  const n = parseFloat(String(v || '').replace(/[^\d.]/g, ''));
+  return isNaN(n) ? 0 : n;
+}
+
+function normalizeStore(raw) {
+  // If API returned packs array
+  if (raw.packs && Array.isArray(raw.packs) && raw.packs.length) {
+    const packs = raw.packs.map(p => {
+      const price = toNum(p.price);
+      const units = toNum(p.units) || 1;
+      const unit_price = toNum(p.unit_price) || (price > 0 && units > 1 ? price / units : price);
+      return { pack_desc: p.pack_desc || '', price, units, unit_price, url: p.url || '' };
+    }).sort((a, b) => a.unit_price - b.unit_price);
+    return { store: raw.store || '', shipping: raw.shipping || '', packs };
+  }
+  // Flat format: price/unit_price directly on store
+  const price = toNum(raw.price || raw.pack_price);
+  const units = toNum(raw.units || raw.quantity) || 1;
+  const unit_price = toNum(raw.unit_price) || (units > 1 ? price / units : price);
+  return {
+    store: raw.store || '',
+    shipping: raw.shipping || '',
+    packs: [{ pack_desc: raw.pack_desc || raw.notes || '', price, units, unit_price, url: raw.url || '' }]
+  };
+}
+
+// ════════════════════════════════════════
+// RENDER
+// ════════════════════════════════════════
+function renderProduct(productName, stores) {
+  const normalized = stores.map(normalizeStore);
+  normalized.sort((a, b) => (a.packs[0]?.unit_price || 999) - (b.packs[0]?.unit_price || 999));
+  const minUnitP = normalized[0]?.packs[0]?.unit_price || 0;
+
+  let html = `<div class="product-block"><div class="product-header">
+    <span class="product-name">${esc(productName)}</span>
+    ${minUnitP > 0 ? `<span class="product-best">₪${minUnitP.toFixed(2)}/יח'</span>` : ''}
+  </div>`;
+
+  normalized.forEach((s, i) => {
+    const isBest = i === 0;
+    const bestPack = s.packs[0];
+    const bestUp = bestPack?.unit_price || 0;
+    const diff = (i > 0 && minUnitP > 0 && bestUp > 0) ? (bestUp - minUnitP).toFixed(2) : null;
+    const shipFree = (s.shipping || '').includes('חינם');
+    const shipBadge = s.shipping
+      ? `<span class="badge ${shipFree ? 'badge-free' : 'badge-paid'}">${esc(s.shipping)}</span>`
+      : '';
+
+    // Packs sub-rows
+    const packsHtml = s.packs.map((p, pi) => {
+      const isGoogleUrl = p.url && p.url.includes('gstatic.com');
+      const hasUrl = p.url?.startsWith('http') && !isGoogleUrl;
+      const linkUrl = hasUrl ? p.url : `https://www.google.com/search?q=${encodeURIComponent(s.store + ' ' + (p.pack_desc || productName))}`;
+      const linkTxt = hasUrl ? '↗ לאתר' : '🔍 חפש';
+      const linkClr = hasUrl ? 'var(--green)' : 'var(--blue)';
+      const linkBg  = hasUrl ? 'var(--green-l)' : 'var(--blue-l)';
+      return `<div style="display:flex;align-items:center;justify-content:space-between;padding:5px 1.1rem 5px 2rem;background:${pi===0?'var(--gold-l)':'var(--surface2)'};border-bottom:1px solid var(--border)">
+        <span style="font-size:12px;color:var(--text2)">${esc(p.pack_desc || (p.units > 1 ? p.units + " יח'" : ''))}</span>
+        <div style="display:flex;align-items:center;gap:8px">
+          ${p.unit_price > 0 ? `<span style="font-size:12px;font-weight:600;color:${pi===0?'var(--gold)':'var(--text2)'}">₪${p.unit_price.toFixed(2)}/יח'</span>` : ''}
+          ${p.price > 0 ? `<span style="font-size:12px;color:var(--text3)">₪${p.price.toFixed(2)}</span>` : ''}
+          <a href="${linkUrl}" target="_blank" rel="noopener"
+            style="font-size:12px;font-weight:500;color:${linkClr};text-decoration:none;padding:3px 9px;border:1px solid ${linkClr};border-radius:6px;background:${linkBg};white-space:nowrap">${linkTxt}</a>
+        </div>
+      </div>`;
+    }).join('');
+
+    html += `<div class="store-row ${isBest ? 'best' : ''}">
+      <div class="rank ${isBest ? 'gold' : ''}">${isBest ? '★' : i+1}</div>
+      <div class="store-info">
+        <div class="store-name">
+          ${isBest ? '<span class="badge badge-best">הזול ליחידה</span>' : ''}
+          ${esc(s.store)}
+          ${shipBadge}
+        </div>
+      </div>
+      <div class="price-col">
+        ${bestUp > 0 ? `<div class="unit-p">₪${bestUp.toFixed(2)}<span class="unit-lbl">/יח'</span></div>` : (bestPack?.price > 0 ? `<div class="unit-p">₪${bestPack.price.toFixed(2)}</div>` : '')}
+        ${diff ? `<div class="p-diff">+₪${diff}</div>` : ''}
+      </div>
+    </div>
+    ${packsHtml}`;
+  });
+
+  html += '</div>';
+  return html;
+}
+
+function renderRecommendation(allResults, recBoxId, storeId, totalId, savingsId, textId) {
+  const storeTotals = {};
+  for (const { productName, stores } of allResults) {
+    const normalized = stores.map(normalizeStore);
+    normalized.sort((a, b) => (a.packs[0]?.unit_price||999) - (b.packs[0]?.unit_price||999));
+    const cheapest = normalized[0];
+    if (!cheapest) continue;
+    const price = cheapest.packs[0]?.price || 0;
+    if (!storeTotals[cheapest.store]) storeTotals[cheapest.store] = { total: 0, items: [] };
+    storeTotals[cheapest.store].total += price;
+    storeTotals[cheapest.store].items.push({ name: productName, price });
+  }
+  const sorted = Object.entries(storeTotals).sort((a, b) => a[1].total - b[1].total);
+  if (!sorted.length) return;
+  const [bestStore, bestData] = sorted[0];
+  const worstTotal = sorted[sorted.length - 1][1].total;
+  const savings = worstTotal - bestData.total;
+  document.getElementById(storeId).textContent = bestStore;
+  document.getElementById(totalId).textContent = `סה"כ סל: ₪${bestData.total.toFixed(2)}`;
+  document.getElementById(savingsId).textContent = savings > 0 ? `חיסכון לעומת הכי יקר: ₪${savings.toFixed(2)}` : '';
+  document.getElementById(textId).textContent = `המחיר הכי זול לכל הסל נמצא ב${bestStore} - לפי מחיר הנמוך ביותר לכל מוצר.`;
+  document.getElementById(recBoxId).style.display = 'block';
+}
+
+// ════════════════════════════════════════
+// SINGLE SEARCH
+// ════════════════════════════════════════
+function setQ(v) { document.getElementById('queryInput').value = v; }
+
+async function doSingle() {
+  const q = document.getElementById('queryInput').value.trim();
+  const key = getKey();
+  if (!q) { showErr('errSingle', 'הכנס שם מוצר'); return; }
+
+  setBtnLoading('singleBtn', true, 'מחפש...');
+  hideErr('errSingle');
+  document.getElementById('resSingle').style.display = 'none';
+  document.getElementById('moreSingleWrap').style.display = 'none';
+  showProg('progSingle');
+  document.getElementById('progSingleText').textContent = `מחפש: ${q}`;
+
+  try {
+    moreStoresPage = 0;
+    const data = await searchPricesViaSerpAPI(q);
+    const stores = data.stores || [];
+    if (!stores.length) throw new Error('לא נמצאו תוצאות. נסה שם מדויק יותר.');
+    lastQuery = q;
+    lastFoundStores = stores.map(s => s.store);
+    const el = document.getElementById('resSingle');
+    el.innerHTML = renderProduct(data.product_he || q, stores);
+    el.style.display = 'block';
+    document.getElementById('moreSingleWrap').style.display = 'block';
+  } catch(e) { showErr('errSingle', e.message); }
+
+  hideProg('progSingle');
+  setBtnLoading('singleBtn', false, 'חפש');
+}
+
+async function doMoreStores() {
+  if (!lastQuery) return;
+  const btn = document.getElementById('moreStoresBtn');
+  btn.disabled = true;
+  btn.textContent = 'מחפש...';
+  hideErr('errSingle');
+
+  try {
+    const nextPage = moreStoresPage + 10;
+    const altQuery = nextPage === 10 ? `${lastQuery} מחיר` : nextPage === 20 ? `קנה ${lastQuery}` : lastQuery;
+    const data = await searchPricesViaSerpAPI(altQuery, nextPage);
+    const stores = data.stores || [];
+    if (!stores.length) throw new Error('לא נמצאו חנויות נוספות.');
+    const excludedLower = lastFoundStores.map(n => n.trim().toLowerCase());
+    const newStores = stores.filter(s => !excludedLower.includes((s.store || '').trim().toLowerCase()));
+    if (!newStores.length) throw new Error('לא נמצאו חנויות חדשות מעבר למוצגות.');
+    moreStoresPage = nextPage;
+    lastFoundStores = [...lastFoundStores, ...newStores.map(s => s.store)];
+    const el = document.getElementById('resSingle');
+    el.innerHTML += renderProduct('חנויות נוספות', newStores);
+  } catch(e) { showErr('errSingle', e.message); }
+
+  btn.disabled = false;
+  btn.textContent = '🔄 חנויות נוספות';
+}
+
+// ════════════════════════════════════════
+// BASKET - parallel (2 at a time) with live progress
+// ════════════════════════════════════════
+function addItem() {
+  const inp = document.getElementById('basketInput');
+  const v = inp.value.trim();
+  if (!v) return;
+  basket.push(v);
+  inp.value = '';
+  inp.focus();
+  renderBasketList();
+}
+function removeItem(i) { basket.splice(i, 1); renderBasketList(); }
+function clearBasket() {
+  basket = [];
+  renderBasketList();
+  document.getElementById('resBasket').style.display = 'none';
+  document.getElementById('recBox').style.display = 'none';
+}
+function loadMyList() {
+  basket = [
+    'קו-אנזים Q10 60 מג סופהרב 180 כמוסות',
+    'מגנזיום קרבונט אמורפי 60 קפסולות',
+    'תמצית זרעי ענבים 250 מג 60 כמוסות',
+    'סו פלמנטו קומפלקס גברים 120 כמוסות'
+  ];
+  renderBasketList();
+}
+function renderBasketList() {
+  const el = document.getElementById('basketList');
+  if (!basket.length) { el.innerHTML = '<div class="basket-empty">הסל ריק - הוסף מוצרים</div>'; return; }
+  el.innerHTML = basket.map((item, i) =>
+    `<div class="basket-item"><span class="basket-item-name">${esc(item)}</span><button class="btn-x" onclick="removeItem(${i})">×</button></div>`
+  ).join('');
+}
+
+async function doBasket() {
+  if (!basket.length) { showErr('errBasket', 'הסל ריק'); return; }
+  const key = getKey();
+
+  setBtnLoading('basketBtn', true, 'מחפש...');
+  hideErr('errBasket');
+  document.getElementById('resBasket').style.display = 'none';
+  document.getElementById('recBox').style.display = 'none';
+
+  // Init progress rows
+  const progEl = document.getElementById('progBasketList');
+  const state = basket.map((name, i) => ({ name, status: 'waiting', result: null, error: null, index: i }));
+  function renderProg() {
+    progEl.innerHTML = state.map(s => {
+      const icon = { waiting: '⏳', searching: '🔍', done: '✓', error: '✗' }[s.status];
+      const priceStr = s.result ? ` - ₪${(s.result.stores?.[0]?.packs?.[0]?.unit_price || 0).toFixed(2)}/יח'` : '';
+      return `<div class="prog-item ${s.status}"><span class="prog-icon">${icon}</span><span class="prog-name">${esc(s.name.substring(0, 30))}</span><span class="prog-price">${priceStr}</span></div>`;
+    }).join('');
+  }
+  showProg('progBasket');
+  renderProg();
+
+  // Search 2 at a time
+  const BATCH = 2;
+  for (let i = 0; i < state.length; i += BATCH) {
+    const batch = state.slice(i, i + BATCH);
+    batch.forEach(s => { s.status = 'searching'; });
+    renderProg();
+    await Promise.all(batch.map(async s => {
+      try {
+        const data = await searchPricesViaSerpAPI(s.name);
+        s.result = data;
+        s.status = 'done';
+      } catch(e) {
+        s.error = e.message;
+        s.status = 'error';
+      }
+      renderProg();
+    }));
+  }
+
+  hideProg('progBasket');
+
+  // Render results
+  const allResults = state.filter(s => s.result?.stores?.length).map(s => ({
+    productName: s.result.product_he || s.name,
+    stores: s.result.stores
+  }));
+
+  if (!allResults.length) { showErr('errBasket', 'לא נמצאו תוצאות לאף מוצר'); setBtnLoading('basketBtn', false, 'חפש מחירים לכל הסל'); return; }
+
+  const el = document.getElementById('resBasket');
+  el.innerHTML = allResults.map(r => renderProduct(r.productName, r.stores)).join('');
+  el.style.display = 'block';
+  renderRecommendation(allResults, 'recBox', 'recStore', 'recTotal', 'recSavings', 'recText');
+
+  setBtnLoading('basketBtn', false, 'חפש מחירים לכל הסל');
+}
+
+// ════════════════════════════════════════
+// UPLOAD
+// ════════════════════════════════════════
+function onDrag(e, over) { e.preventDefault(); document.getElementById('uploadZone').className = 'upload-zone' + (over ? ' drag' : ''); }
+function onDrop(e) { e.preventDefault(); document.getElementById('uploadZone').className = 'upload-zone'; const f = e.dataTransfer.files[0]; if (f) handleFile(f); }
+function onFileSelected(e) { const f = e.target.files[0]; if (f) handleFile(f); }
+
+function handleFile(file) {
+  const ok = ['application/pdf','image/jpeg','image/png','image/webp','image/jpg'];
+  if (!ok.includes(file.type)) { showErr('errUpload', 'סוג קובץ לא נתמך'); return; }
+  if (file.size > 20 * 1024 * 1024) { showErr('errUpload', 'קובץ גדול מדי - מקסימום 20MB'); return; }
+  uploadFile = file;
+  hideErr('errUpload');
+  document.getElementById('idBox').style.display = 'none';
+  document.getElementById('resUpload').style.display = 'none';
+  document.getElementById('recBoxUpload').style.display = 'none';
+  document.getElementById('previewName').textContent = file.name;
+  const img = document.getElementById('previewImg');
+  if (file.type.startsWith('image/')) {
+    const r = new FileReader();
+    r.onload = e => { img.src = e.target.result; img.style.display = 'block'; };
+    r.readAsDataURL(file);
+    setMode('product');
+  } else {
+    img.style.display = 'none';
+    setMode('invoice');
+  }
+  document.getElementById('previewBox').style.display = 'block';
+}
+
+function clearFile() {
+  uploadFile = null;
+  document.getElementById('previewBox').style.display = 'none';
+  document.getElementById('fileInput').value = '';
+  document.getElementById('idBox').style.display = 'none';
+  document.getElementById('resUpload').style.display = 'none';
+  document.getElementById('recBoxUpload').style.display = 'none';
+  hideErr('errUpload');
+}
+
+function setMode(m) {
+  uploadMode = m;
+  document.getElementById('modeInvoice').className = 'mode-btn' + (m === 'invoice' ? ' sel' : '');
+  document.getElementById('modeProduct').className = 'mode-btn' + (m === 'product' ? ' sel' : '');
+}
+
+async function doAnalyze() {
+  if (!uploadFile) return;
+  const key = getKey();
+  if (!key) { showErr('errUpload', 'יש להזין מפתח API'); return; }
+
+  setBtnLoading('analyzeBtn', true, 'מנתח...');
+  hideErr('errUpload');
+  document.getElementById('idBox').style.display = 'none';
+  showProg('progUpload');
+  document.getElementById('progUploadText').textContent = uploadMode === 'invoice' ? 'מנתח חשבונית...' : 'מזהה מוצר...';
+
+  try {
+    const { base64, mediaType } = await fileToBase64(uploadFile);
+    const isPdf = uploadFile.type === 'application/pdf';
+    const fileBlock = isPdf
+      ? { type: 'document', source: { type: 'base64', media_type: 'application/pdf', data: base64 } }
+      : { type: 'image', source: { type: 'base64', media_type: mediaType, data: base64 } };
+
+    if (uploadMode === 'invoice') {
+      const data = await callAPI(key, SYS_INVOICE, 'זהה מוצרים בחשבונית', [fileBlock], false);
+      lastRawUploadData = data;
+      if (data.error) throw new Error(data.error);
+      if (!data.products?.length) throw new Error('לא זוהו מוצרים');
+      identifiedProducts = data.products;
+      const title = `זוהו ${data.products.length} מוצרים${data.store_name ? ' מ' + data.store_name : ''}${data.purchase_date ? ' (' + data.purchase_date + ')' : ''}:`;
+      document.getElementById('idTitle').textContent = title;
+      document.getElementById('idList').innerHTML = data.products.map(p =>
+        `<div class="id-item"><span class="id-check">✓</span>${esc(p)}</div>`).join('');
+      document.getElementById('idBox').style.display = 'block';
+    } else {
+      const data = await callAPI(key, SYS_PRODUCT_IMG, 'זהה מוצר בתמונה', [fileBlock], false);
+      lastRawUploadData = data;
+      if (data.error) throw new Error(data.error);
+      const q = data.search_query || data.product_he;
+      if (!q) throw new Error('לא ניתן לזהות את המוצר');
+      identifiedProducts = [q];
+      hideProg('progUpload');
+      document.getElementById('progUploadText').textContent = `זוהה: ${data.product_he || q} - מחפש מחיר...`;
+      showProg('progUpload');
+      const priceData = await searchPricesViaSerpAPI(q);
+      if (priceData.stores?.length) {
+        const el = document.getElementById('resUpload');
+        el.innerHTML = renderProduct(priceData.product_he || q, priceData.stores);
+        el.style.display = 'block';
+      }
+    }
+  } catch(e) { showErr('errUpload', e.message); }
+
+  hideProg('progUpload');
+  setBtnLoading('analyzeBtn', false, 'זהה וחפש');
+}
+
+async function doSearchIdentified() {
+  if (!identifiedProducts.length) return;
+  const key = getKey();
+  if (!key) { showErr('errUpload', 'יש להזין מפתח API'); return; }
+
+  setBtnLoading('idSearchBtn', true, 'מחפש...');
+  document.getElementById('resUpload').style.display = 'none';
+  document.getElementById('recBoxUpload').style.display = 'none';
+
+  const progEl = document.getElementById('progUploadList');
+  const state = identifiedProducts.map((name, i) => ({ name, status: 'waiting', result: null, index: i }));
+  function renderProg() {
+    progEl.innerHTML = state.map(s => {
+      const icon = { waiting: '⏳', searching: '🔍', done: '✓', error: '✗' }[s.status];
+      const priceStr = s.result ? ` - ₪${(s.result.stores?.[0]?.packs?.[0]?.unit_price || 0).toFixed(2)}/יח'` : '';
+      return `<div class="prog-item ${s.status}"><span class="prog-icon">${icon}</span><span class="prog-name">${esc(s.name.substring(0,30))}</span><span class="prog-price">${priceStr}</span></div>`;
+    }).join('');
+  }
+  showProg('progUpload');
+  document.getElementById('progUploadText').textContent = 'מחפש מחירים...';
+  renderProg();
+
+  const BATCH = 2;
+  for (let i = 0; i < state.length; i += BATCH) {
+    const batch = state.slice(i, i + BATCH);
+    batch.forEach(s => { s.status = 'searching'; });
+    renderProg();
+    await Promise.all(batch.map(async s => {
+      try {
+        s.result = await searchPricesViaSerpAPI(s.name);
+        s.status = 'done';
+      } catch(e) { s.status = 'error'; }
+      renderProg();
+    }));
+  }
+
+  hideProg('progUpload');
+  const allResults = state.filter(s => s.result?.stores?.length).map(s => ({
+    productName: s.result.product_he || s.name, stores: s.result.stores
+  }));
+  if (!allResults.length) { showErr('errUpload', 'לא נמצאו תוצאות'); setBtnLoading('idSearchBtn', false, 'חפש מחירים לכל המוצרים'); return; }
+
+  const el = document.getElementById('resUpload');
+  el.innerHTML = allResults.map(r => renderProduct(r.productName, r.stores)).join('');
+  el.style.display = 'block';
+  renderRecommendation(allResults, 'recBoxUpload', 'recStoreUpload', 'recTotalUpload', 'recSavingsUpload', 'recTextUpload');
+  setBtnLoading('idSearchBtn', false, 'חפש מחירים לכל המוצרים');
+}
+
+// ════════════════════════════════════════
+// FILE TO BASE64
+// ════════════════════════════════════════
+function fileToBase64(file) {
+  return new Promise((res, rej) => {
+    const r = new FileReader();
+    r.onload = e => { const b64 = e.target.result.split(',')[1]; res({ base64: b64, mediaType: file.type }); };
+    r.onerror = () => rej(new Error('שגיאה בקריאת הקובץ'));
+    r.readAsDataURL(file);
+  });
+}
+
+// ════════════════════════════════════════
+// UI HELPERS
+// ════════════════════════════════════════
+function showProg(id) { document.getElementById(id).style.display = 'block'; }
+function hideProg(id) { document.getElementById(id).style.display = 'none'; }
+function showErr(id, msg) { const el = document.getElementById(id); el.style.display = 'block'; el.textContent = '⚠ ' + msg; }
+function hideErr(id) { document.getElementById(id).style.display = 'none'; }
+function setBtnLoading(id, loading, label) { const b = document.getElementById(id); b.disabled = loading; b.textContent = label; }
+function esc(s) { return String(s||'').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;'); }
+</script>
+</body>
+</html>
