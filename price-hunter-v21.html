@@ -349,35 +349,44 @@ input[type="file"]{display:none}
 // ════════════════════════════════════════
 // SYSTEM PROMPTS
 // ════════════════════════════════════════
-const SYS_PRICE = `אתה סוכן השוואת מחירים לשוק הישראלי. המשימה: מחיר אמיתי ומדויק בלבד.
+const SYS_PRICE = `אתה סוכן השוואת מחירים. המשימה: מחיר אמיתי ומדויק בלבד.
 
 כללים מחמירים - חובה לקיים:
 1. אסור להמציא מחיר. אסור להעריך מחיר. אסור להשתמש במחיר ישן או משוער.
 2. רק מחיר שמצאת בפועל על עמוד מוצר פעיל - היום.
 3. אם לא מצאת מחיר מאומת לחנות מסוימת - אל תכלול אותה בתשובה.
 4. כל URL חייב להיות קישור ישיר לעמוד המוצר - לא לדף ראשי.
+5. חפש גדלי אריזה שונים לאותו מוצר - אריזה גדולה יותר עשויה להיות זולה יותר ליחידה.
 
 שיטת חיפוש - בצע בסדר הזה:
 1. חפש את המוצר בעברית ובאנגלית
-2. חפש ספציפית באתרים הישראלים: bug.co.il, ivory.co.il, ksp.co.il, netone.co.il, zap.co.il, netvision.net.il, mega.co.il, superpharm.co.il, newpharma.co.il
-3. לכל חנות - ודא שאתה רואה מחיר ברור על עמוד המוצר הנוכחי
-4. אל תסתמך על snippet בלבד - ודא מול עמוד המוצר
+2. אם חיפוש בישראל - חפש באתרים: super-pharm.co.il, newpharma.co.il, biogaya.co.il, epharma.co.il, naturo.co.il, iherb.com, zap.co.il
+3. אם חיפוש בעולם - חפש ב: iherb.com, amazon.com, vitacost.com, swansonvitamins.com
+4. לכל חנות - ודא שאתה רואה מחיר ברור על עמוד המוצר הנוכחי
+5. אל תסתמך על snippet בלבד - ודא מול עמוד המוצר
+
+חוקי JSON - חובה:
+- price = מחיר מלא של האריזה בש"ח (לא מחיר ליחידה בודדת)
+- units = 1 תמיד (אריזה אחת)
+- unit_price = זהה ל-price
+- pack_desc = תיאור האריזה כולל כמות (לדוגמה: "60 כמוסות", "3 x 60 כמוסות")
 
 השב אך ורק ב-JSON תקין ללא markdown:
 {
   "product_he": "שם מוצר בעברית",
-  "unit_type": "יחידה",
+  "unit_type": "אריזה",
   "stores": [
     {
       "store": "שם חנות",
       "shipping": "מדיניות משלוח",
       "packs": [
-        {"pack_desc":"תיאור דגם/אריזה","price":199.90,"units":1,"unit_price":199.90,"url":"https://..."}
+        {"pack_desc":"60 כמוסות","price":64.00,"units":1,"unit_price":64.00,"url":"https://..."},
+        {"pack_desc":"3 x 60 כמוסות","price":150.00,"units":1,"unit_price":150.00,"url":"https://..."}
       ]
     }
   ]
 }
-מיין stores לפי unit_price הנמוך ביותר. החזר עד 3 חנויות עם מחיר מאומת בלבד.
+מיין stores לפי price הנמוך ביותר של האריזה הקטנה. החזר עד 3 חנויות עם מחיר מאומת בלבד.
 החזר JSON בלבד - ללא מילה אחת לפני או אחרי. ללא markdown. ללא הסברים.`;
 
 const SYS_INVOICE = `אתה מנתח חשבוניות קניה.
@@ -789,8 +798,10 @@ async function doMoreStores() {
   if (!key) { showErr('errSingle', 'יש להזין מפתח API'); return; }
   const btn = document.getElementById('moreStoresBtn');
   btn.disabled = true;
-  btn.textContent = 'מחפש...';
+  btn.textContent = 'ממתין...';
   hideErr('errSingle');
+  await sleep(3000);
+  btn.textContent = 'מחפש...';
 
   try {
     const excludedList = lastFoundStores.join(', ');
